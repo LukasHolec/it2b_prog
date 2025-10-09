@@ -1,16 +1,22 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
+// Ulohy - Generovani nahody
 
-int main () {
-    
-    srand(time(NULL));
+ 
+
+    #include<stdio.h>
+    #include<stdlib.h>
+    #include<time.h>
+
+    int main () {
+        
+        srand(time(NULL));
+        int cislo = rand() % 2;;
+            if (cislo == 0) {
+                printf("Pana");
+            } else {
+                printf("Orel");
+            }
+         
+        return 0;
+    } 
 
 
-        if (rand() % 2 == 0) {
-            printf("Orel");
-        } else {
-            printf("Pana");
-        }
-    return 0;
-}
