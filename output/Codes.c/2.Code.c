@@ -2,7 +2,7 @@
 
  
 
-    #include<stdio.h>
+   /* #include<stdio.h>
     #include<stdlib.h>
     #include<time.h>
 
@@ -18,21 +18,24 @@
             }
          
         return 0;
-    }
+    } */
+
+
     #include<stdio.h>
     #include<stdlib.h>
     #include<time.h>
-    int main () {
+    int main() {
 
-        char Y = {"Y"};
-        char n = {"n"};
+        char Y[] = "Y";
+        char n[] = 'n';
         char odpoved;
-        char K = {"K"};
-        char S = {"S"};
+        char K[] = "K";
+        char S[] = "S";
         char odpoved2;
         char kostky;
         int pocet;
         int soucet;
+        int strany;
        
         // generovani 1. hodu kostky
         srand(time(NULL));
@@ -54,11 +57,24 @@
                 }
                 printf("Soucet hodu %d kostek je: %d", pocet, soucet);
             }
-            else if (odpoved2 = S) 
+            else if(odpoved2 = S) {
+                printf("Kolika strannou kostku chcete mit?");
+                scanf("%d", &strany);
+                srand(time(NULL));
+                int pocetstran = rand() % strany + 1;
+                printf("Hodil jste cislo: %d", pocetstran);
 
-        }}
+            }
+            else {
+                printf("Smrdis");
+            }
 
-
+        }
+        else {
+            printf("smrdis");
+        }
+        return 0;
+    }
 
 
 
