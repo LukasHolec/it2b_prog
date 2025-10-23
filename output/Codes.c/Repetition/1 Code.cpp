@@ -20,25 +20,3 @@ int main () {
     return 0;
 }
     */
-#include <stdio.h>  
-int main() {
-    int cislo = 0;
-
-    do {
-        printf("Zadejte libovolne trimistne usde cislo:");
-        scanf("%d", &cislo);    
-        }
-
-    while (cislo < 100 && cislo > 999 && cislo / 2 == 1) {
-             do {printf("Zadejte libovolne trimistne usde cislo:");
-                scanf("%d", &cislo); 
-        }
-        else {
-            printf("Zadejte libovolne trimistne usde cislo:");
-        scanf("%d", &cislo); 
-        }
-
-
-    return 0;
-}
-}

@@ -4,10 +4,7 @@
 #include <time.h>
 #include <math.h>
     int main() {
-
-        char input_str[] = "Ahoj";
-     
-
+printf("Ahoj svete\n");
 
     return 0;
 
