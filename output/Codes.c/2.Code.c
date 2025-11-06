@@ -1,78 +1,53 @@
-// Ulohy - Generovani nahody
-
- 
-
-   /* #include<stdio.h>
-    #include<stdlib.h>
-    #include<time.h>
-
-    int main () {
-        
-        srand(time(NULL));
-        int cislo = rand() % 2;
-
-            if (cislo == 0) {
-                printf("Pana");
-            } else {
-                printf("Orel");
-            }
-         
-        return 0;
-    } */
-
-
-    #include<stdio.h>
-    #include<stdlib.h>
-    #include<time.h>
+#include<stdio.h>
     int main() {
+    // Cas odletu
+        float hodiny = 0;
+        int minuty = 0;
+    // Rychlost a cas     
+        float vzdalenost = 0;
+        float rychlost = 0;
+        
+            printf("Jaky je cas odletu v hodinach? [H]");
+            scanf("%f", &hodiny);
 
-        char Y[] = "Y";
-        char n[] = 'n';
-        char odpoved;
-        char K[] = "K";
-        char S[] = "S";
-        char odpoved2;
-        char kostky;
-        int pocet;
-        int soucet;
-        int strany;
-       
-        // generovani 1. hodu kostky
-        srand(time(NULL));
-        int cislo = rand() % 6 + 1;
-
-        // pokracovani
-        printf("Hodil jste cislo: %d. \n Chcete pokracovat? [Y/n]?", cislo);
-        scanf("%c", &odpoved);
-        if (odpoved == Y) {
-            printf("Chcete si zvolit pocet kostek? [K] Nebo pocet stran kostky? [S]?");
-
-            if (odpoved2 = K) {
-                printf("S kolika kostky chcete hrat?");
-                scnaf("%d", &pocet);
-                for (int i = 0; i < pocet; i++) {
-                    srand(time(NULL));
-                int vicekostek = rand() % 6 + 1;
-                soucet = soucet + vicekostek;
+                if (hodiny > 25 || hodiny < 1) {
+                    printf("Spatny vstup)ů
+                    return 1;
                 }
-                printf("Soucet hodu %d kostek je: %d", pocet, soucet);
-            }
-            else if(odpoved2 = S) {
-                printf("Kolika strannou kostku chcete mit?");
-                scanf("%d", &strany);
-                srand(time(NULL));
-                int pocetstran = rand() % strany + 1;
-                printf("Hodil jste cislo: %d", pocetstran);
+              
 
-            }
-            else {
-                printf("Smrdis");
-            }
+            printf("A v minutach? [M]");
+            scanf("%d", &minuty);
 
-        }
-        else {
-            printf("smrdis");
-        }
+                if (minuty > 60 || minuty < 1) {
+                    printf("Spatny vstup");
+                    return 1;
+                }
+             
+
+            printf("Jaka je letova vzdalenost? [KM]");
+            scanf("%f", &vzdalenost);
+                
+                if (vzdalenost < 1) {
+                    printf("Spatny vstup");
+                    return 1;
+                }
+              
+
+            printf("Jaka je rychlost letadla? [KM/H]");
+            scanf("%f", &rychlost);
+               
+                if (rychlost < 1) {
+                    printf("Spatny vstup");
+                    return 1;
+                }
+
+        float t = vzdalenost / rychlost;
+
+        printf("Cas priletu je: %f, %.1f", hodiny + t);
+
+             
+
         return 0;
     }
 

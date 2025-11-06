@@ -1,14 +1,14 @@
 # Po-prázdninový Céčkový refresher
 
 
-Nebojte se googlovat a hledat programátorské rady :)
+Nebojte se googlovat a hledat programátorské rady :
 
 ### Násobné Ahoj světě!
 Uživatel ti na vstupu zadá počet opakování. Následně tolikrát vypiš zprávu "Ahoj svete!".
 
 Pokud uživatel zadá na vstupu záporné číslo, vypiš "*Neplatny vstup*" a ukonči program errorem.
 
-Např.
+Např.   
 - vstup: 3
 - výstup:
   Ahoj svete!
