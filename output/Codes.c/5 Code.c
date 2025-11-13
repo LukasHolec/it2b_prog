@@ -117,14 +117,40 @@ STRINGY
          */
 
 #include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-#include<ctype.h>
 #include<string.h>
+#include<ctype.h>
+
     int main() {
 
+        char string[10];
+        char string2[10];
+
+        printf("Zadejte slovo: ");
+        scanf(" %9s", string);
+        int delka = strlen(string);
+        delka = toupper(delka);
+
+
+        printf("Zadejte 2. slovo: ");
+        scanf(" %9s", string2);
+        int delka2 = strlen(string2);
+        delka2 = toupper(delka2);
+
+        if (delka != delka2){
+            printf("Spatne");
+            return 1;       
+        }
         
 
+        for (int i = 0; i < delka; i++){
+
+            if (string[i] != string2[i]){
+                    break;
+                    printf("Spatne");
+                    return 1;
+                }
+        }
+            printf("Super, spravne");
 
         return 0;
-}
+    }

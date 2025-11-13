@@ -689,9 +689,11 @@ int main() {
 
         srand(time(NULL));
 
-        int prasata = (rand () % 30) + 60;
+        int prasata = (rand () % 30) + 51;
 
-        printf("Pocet volicu byl %d%%", prasata);
+        printf("Velobni ucast byla: %d%%", prasata);
+
+        
         return 0;
 }
 
