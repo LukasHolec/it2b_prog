@@ -153,4 +153,5 @@ STRINGY
             printf("Super, spravne");
 
         return 0;
+        
     }
