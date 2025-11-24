@@ -225,7 +225,7 @@ STRINGY
         return 0;
     }
 
-
+-------------------------------------------
 
 // char jako ASCII hodnota
 
@@ -244,7 +244,12 @@ STRINGY
 
         return 0;
     }
+    
+---------------------------------------------
+
 */
+
+// Dobre heslo
 
 #include<stdio.h>
 #include<string.h>
