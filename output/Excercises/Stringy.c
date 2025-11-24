@@ -114,7 +114,7 @@ STRINGY
 
         return 0;
     }
-         */
+         
 
 #include<stdio.h>
 #include<string.h>
@@ -153,5 +153,109 @@ STRINGY
             printf("Super, spravne");
 
         return 0;
+    }
+
+
+    #include<stdio.h>
+    int main() {
+
+
+    #include<stdio.h>
+    #include<stdlib.h>
+    #include<time.h>
+    int main() {
+
+        char Y[] = "Y";
+        char n[] = 'n';
+        char odpoved;
+        char K[] = "K";
+        char S[] = "S";
+        char odpoved2;
+        char kostky;
+        int pocet;
+        int soucet;
+        int strany;
+       
+        // generovani 1. hodu kostky
+        srand(time(NULL));
+        int cislo = rand() % 6 + 1;
+
+        // pokracovani
+        printf("Hodil jste cislo: %d. \n Chcete pokracovat? [Y/n]?", cislo);
+        scanf("%c", &odpoved);
+        if (odpoved == Y) {
+            printf("Chcete si zvolit pocet kostek? [K] Nebo pocet stran kostky? [S]?");
+
+            if (odpoved2 = K) {
+                printf("S kolika kostky chcete hrat?");
+                scnaf("%d", &pocet);
+                for (int i = 0; i < pocet; i++) {
+                    srand(time(NULL));
+                int vicekostek = rand() % 6 + 1;
+                soucet = soucet + vicekostek;
+                }
+                printf("Soucet hodu %d kostek je: %d", pocet, soucet);
+            }
+            else if(odpoved2 = S) {
+                printf("Kolika strannou kostku chcete mit?");
+                scanf("%d", &strany);
+                srand(time(NULL));
+                int pocetstran = rand() % strany + 1;
+                printf("Hodil jste cislo: %d", pocetstran);
+
+            }
+            else {
+                printf("Smrdis");
+            }
+
+        }
+        else {
+            printf("smrdis");
+        }
+        return 0;
+    }
+
+        char str[20];
+
+        printf("Zadejte slovo:");
+        scanf("%s", str);
+
         
+
+        return 0;
+    }
+
+
+
+// char jako ASCII hodnota
+
+#include<stdio.h>
+#include<string.h>
+    int main() {
+
+        char str[20];
+
+        printf("Zadejte slovo: ");
+        scanf("%49s", str);
+
+        for (int i = 0; i < strlen(str); i++) {
+            printf(" %c : %d\n", str[i], str[i]);
+        }
+
+        return 0;
+    }
+*/
+
+#include<stdio.h>
+#include<string.h>
+    int main(){
+
+        str[20];
+
+        printf("Zadejte silne heslo: ");
+        scanf("%s", str);
+
+        
+
+        return 0;
     }
