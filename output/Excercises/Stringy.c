@@ -253,14 +253,15 @@ STRINGY
 
 #include<stdio.h>
 #include<string.h>
-    int main(){
+    int main(){ 
 
         str[20];
 
         printf("Zadejte silne heslo: ");
         scanf("%s", str);
+        printf(" ");
 
-        
+    
 
         return 0;
     }
