@@ -247,7 +247,6 @@ STRINGY
     
 ---------------------------------------------
 
-*/
 
 // Dobre heslo
 
@@ -265,3 +264,56 @@ STRINGY
 
         return 0;
     }
+
+
+#include<stdio.h>
+#include<string.h>
+
+int main () {
+
+    char str[20];
+    char samohlasky [] = {"aeiou"};
+
+    printf("Zadejte libovolne slovo: \n");
+    scanf("%19s", str);
+
+    int delka_str = strlen(str); 
+    int pocet = 0;
+    int mnozstvi = 0;
+
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < delka_str; j++) {
+            if (samohlasky[i] == str[j]) {
+                pocet++;
+                mnozstvi++;
+            }    
+        }   
+        printf("Pocet znaku %c byl %d\n", samohlasky[i], pocet);
+        pocet = 0;
+    }
+        printf("Pocet souhlasek je %d\n", delka_str - mnozstvi);
+        printf("Celkem bylo: %d znaku", delka_str);
+
+return 0;
+}
+*/
+
+#include<stdio.h>
+#include<string.h>
+
+int main () {
+
+    char string[20];
+
+    printf("zadejte slovo:");
+    scanf("%19s", string);
+    int delka = strlen(string);
+
+    for (int i = 0; i < delka; i++) {
+        string[i] = string[i] + 1;
+        if (string[i] == z);
+    }
+
+
+    return 0;
+}
