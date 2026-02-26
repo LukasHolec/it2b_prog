@@ -782,6 +782,7 @@ int dokonaleCislo(int cislo, int soucet) {
         return 1;
     }
 }
+*/
 
 int main() {
 
@@ -795,7 +796,7 @@ int main() {
 
 
     return 0;
-} */
+} 
 
 
 
